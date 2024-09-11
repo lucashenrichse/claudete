@@ -1,40 +1,47 @@
-const caixaPrincipal = document.querySelector('.caixa-principal');
-const caixaPerguntas = document.querySelector('.caixa-perguntas');
-const caixaAlternativas = document.querySelector('.caixa-alternativas');
-const caixaResultado = document.querySelector('.caixa-resultado');
-const texoResutado = document.querySelector('.texo-resultado');
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "vc fala sozinho",
+        enunciado:' vc passa muinto tempo na internet' ,
         alternativas: [
             "sim",
             "nao"
         ]
+    },
+    {
+    enunciado: "vc tem rede socias",
+        alternativas: [
+        " sim",
+        "nao"
+        ]
+    },
+    {
+    enunciado: "vc ja  brigou com algem da familia por causa da rede social",
+        alternativas: [
+        "sim",
+        "nao"
+        ]
+    },
+    {
+    enunciado: "vc usa  rede socias no trabalho",
+        alternativas: [
+        "sim ",
+        "nao"
+        ]
+    },
+];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){ 
+    perguntaAtual= perguntas [atual];
+    caixaPerguntas .textContent = perguntaAtual.enunciado;
     }
-
-]
-{
-    enunciado: "vc faz terapia",
-        alternativas[
-        "claro que não sou louco",
-        "alo caps"
-        ]
-};
-
-
-
-
-enunciado: "vc ja ",
-        alternativas[
-        "",
-        "Alternativa 2"
-        ]
-
-        {
-            enunciado: "vc ve coisas que nao estão lá",
-                alternativas[
-                "fantasma conta?",
-                "devo chamar um padre"
-                ]
-        };
+        
+mostraPergunta();
+        
